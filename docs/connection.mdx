@@ -1,0 +1,42 @@
+---
+id: connection
+title: 接続
+description: 入口とテレポートポイントを正しく接続する方法。
+slug: /connection
+---
+
+<span className="doc-kicker">BASIC</span>
+
+# 接続
+
+<p className="lead-text">入口が「どこへ移動させるか」を判断できるように、テレポートポイントを参照欄へ割り当てます。</p>
+
+## 1対1で接続する
+
+1. Hierarchyで入口を選択する
+2. Inspectorでテレポート設定のコンポーネントを探す
+3. 移動先の参照欄へテレポートポイントをドラッグ＆ドロップする
+4. Play Modeで接続先を確認する
+
+<div className="screenshot-placeholder"><div><strong>入口の接続設定</strong><small>差し替え先: 接続先の参照欄を囲んだInspector</small></div></div>
+
+## 複数の移動先を接続する
+
+移動先リストがある場合は、要素数を増やして各ポイントを登録します。登録順に意味を持たせる場合は、Hierarchyとリストの並びを揃えておくと管理しやすくなります。
+
+:::info 移動先が複数あるとき
+ランダム選択は[ランダム](./random)、混雑を避けて振り分けたい場合は[分散](./distribution)を確認してください。
+:::
+
+## 接続チェック
+
+<ul className="check-list">
+  <li>参照欄がNoneになっていない</li>
+  <li>Project内のPrefabではなく、Scene内の対象を参照している</li>
+  <li>移動先GameObjectが有効になっている</li>
+  <li>別エリアの同名ポイントを誤って選んでいない</li>
+</ul>
+
+## 接続を変更するとき
+
+Play Mode中の変更は、終了時に元へ戻ることがあります。確定する設定変更はPlay Modeを終了してから行い、Prefabへ適用する範囲も確認してください。

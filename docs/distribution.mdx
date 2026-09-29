@@ -1,0 +1,36 @@
+---
+id: distribution
+title: 分散
+description: 複数の移動先へプレイヤーを分散させる設定。
+slug: /distribution
+---
+
+<span className="doc-kicker">RULE</span>
+
+# 分散
+
+<p className="lead-text">複数の行き先を使い、同じ場所へプレイヤーが集中しにくいように振り分けます。</p>
+
+## ランダムとの使い分け
+
+<div className="accent-grid">
+  <div className="accent-card accent-blue"><strong>ランダム</strong><p>抽選による意外性を優先。人数の偏りは発生します。</p></div>
+  <div className="accent-card accent-green"><strong>分散</strong><p>混雑の軽減を優先。空きや順番を見て移動先を選びます。</p></div>
+</div>
+
+## 設定する
+
+1. 2つ以上のテレポートポイントを用意する
+2. 各ポイントを入口の候補へ登録する
+3. 選択方法を**分散**にする
+4. 各ポイントの周囲に十分な空間があるか確認する
+
+<div className="screenshot-placeholder"><div><strong>分散先の登録</strong><small>差し替え先: 複数ポイントと設定リストがわかる画面</small></div></div>
+
+## 定員と組み合わせる
+
+移動先がエリアごとに分かれている場合は、[エリア・定員](./area-capacity)と組み合わせることで、空いている候補を優先できます。すべての候補が満員になるケースも用意して確認してください。
+
+:::tip テスト方法
+同時に複数人が入る場合だけでなく、1人ずつ連続して入る場合、退出後にもう一度入る場合も試します。
+:::

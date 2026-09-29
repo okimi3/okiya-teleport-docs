@@ -1,0 +1,47 @@
+---
+id: quick-start
+title: クイックスタート
+description: 入口1つと移動先1つの最小構成を作る手順。
+slug: /quick-start
+---
+
+<span className="doc-kicker">QUICK START</span>
+
+# クイックスタート
+
+<p className="lead-text">まずは入口1つ、移動先1つだけでテレポートを動かします。所要時間の目安は5分です。</p>
+
+## 1. テレポートポイントを置く
+
+Projectウィンドウから移動先用のPrefabをSceneへ配置します。床から少し上に置き、到着したプレイヤーが壁や床へ埋まらない位置にします。
+
+<div className="screenshot-placeholder"><div><strong>STEP 1 — 移動先をSceneへ配置</strong><small>差し替え先: SceneビューとTransformが見える画面</small></div></div>
+
+## 2. 入口を置く
+
+入口用のPrefabをSceneへ配置します。プレイヤーが触れる範囲と、見た目の位置が合っているか確認します。
+
+<div className="screenshot-placeholder"><div><strong>STEP 2 — 入口を配置</strong><small>差し替え先: 入口の当たり判定が見える画面</small></div></div>
+
+## 3. 移動先を接続する
+
+入口側のInspectorにある移動先の参照欄へ、手順1で置いたテレポートポイントを割り当てます。具体的な接続方法は[接続](./connection)で詳しく説明します。
+
+<div className="screenshot-placeholder"><div><strong>STEP 3 — Inspectorで接続</strong><small>差し替え先: 参照欄を強調したInspector</small></div></div>
+
+## 4. 動作を確認する
+
+Play Modeを開始し、入口へ入って移動できることを確認します。
+
+<ul className="check-list">
+  <li>入口に触れると1回だけ移動する</li>
+  <li>指定したポイントへ到着する</li>
+  <li>到着直後に入口へ戻されない</li>
+  <li>Consoleにエラーが出ていない</li>
+</ul>
+
+:::tip うまく動かない場合
+入口と移動先の参照、GameObjectの有効状態、当たり判定の位置を順に確認します。複数の機能を有効にしている場合は、いったん最小構成へ戻します。
+:::
+
+これで基本のテレポートは完成です。複数の移動先を使う場合は、[ランダム](./random)または[分散](./distribution)へ進みます。

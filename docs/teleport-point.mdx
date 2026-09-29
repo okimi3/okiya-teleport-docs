@@ -1,0 +1,44 @@
+---
+id: teleport-point
+title: テレポートポイント
+description: 移動先の配置、向き、安全な位置の決め方。
+slug: /teleport-point
+---
+
+<span className="doc-kicker">BASIC</span>
+
+# テレポートポイント
+
+<p className="lead-text">テレポートポイントは、プレイヤーが到着する位置と向きの基準です。</p>
+
+## 配置の基本
+
+Sceneビューでポイントを移動し、到着させたい位置へ置きます。Transformの上方向と前方向が、想定する床面と向きに合っていることを確認してください。
+
+<div className="screenshot-placeholder"><div><strong>ポイントの位置と向き</strong><small>差し替え先: 移動ギズモと前方向が見えるSceneビュー</small></div></div>
+
+## 安全な到着位置
+
+- 床面からわずかに余裕を持たせる
+- 壁、天井、家具などのColliderから離す
+- 到着直後に別のTriggerへ触れない位置にする
+- 複数人が到着する場合は、十分な立ち位置を確保する
+
+:::warning 入口と重ねない
+移動先が入口のTrigger内にあると、連続テレポートが発生する場合があります。入口と移動先の範囲は離してください。
+:::
+
+## わかりやすい名前を付ける
+
+ポイントが増えたら、場所と用途がわかる名前にします。
+
+```text
+TP_Lobby_01
+TP_Stage_Left
+TP_Stage_Right
+TP_Exit
+```
+
+## 複数ポイントを整理する
+
+空のGameObjectを親にして、エリアごとにまとめると接続ミスを減らせます。移動ルールを設定する前に、各ポイントへ一度ずつ直接移動して位置を確認するのがおすすめです。
