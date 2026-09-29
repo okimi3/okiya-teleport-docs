@@ -7,7 +7,6 @@ const sidebars = {
       collapsed: false,
       items: [
         {type: 'doc', id: 'quick-start', label: 'クイックスタート'},
-        {type: 'doc', id: 'installation', label: '導入'},
       ],
     },
     {
