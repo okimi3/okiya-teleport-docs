@@ -46,7 +46,6 @@ const config = {
       title: 'OKIYA式 Teleport V2',
       logo: {alt: 'OKIYA式 Teleport V2', src: 'img/logo.svg'},
       items: [
-        {to: '/docs/intro', label: 'ドキュメント', position: 'left'},
         {to: '/docs/quick-start', label: 'クイックスタート', position: 'left'},
         {
           href: `https://github.com/${organizationName}/${repositoryName}`,
@@ -61,7 +60,6 @@ const config = {
         {
           title: 'ガイド',
           items: [
-            {label: 'はじめに', to: '/docs/intro'},
             {label: 'クイックスタート', to: '/docs/quick-start'},
             {label: 'FAQ', to: '/docs/faq'},
           ],
