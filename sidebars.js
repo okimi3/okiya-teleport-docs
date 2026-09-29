@@ -1,14 +1,7 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   docsSidebar: [
-    {
-      type: 'category',
-      label: 'はじめる',
-      collapsed: false,
-      items: [
-        {type: 'doc', id: 'quick-start', label: 'クイックスタート'},
-      ],
-    },
+    {type: 'doc', id: 'quick-start', label: 'クイックスタート'},
     {
       type: 'category',
       label: '基本',
