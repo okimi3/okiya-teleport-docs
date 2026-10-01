@@ -9,6 +9,7 @@ const sidebars = {
       items: [
         {type: 'doc', id: 'teleport-point', label: 'テレポートポイント'},
         {type: 'doc', id: 'connection', label: 'テレポート接続'},
+        {type: 'doc', id: 'access-restriction', label: '利用制限'},
       ],
     },
     {
