@@ -40,6 +40,7 @@ const sidebars = {
       items: [
         {type: 'doc', id: 'update', label: 'アップデート'},
         {type: 'doc', id: 'faq', label: 'FAQ'},
+        {type: 'doc', id: 'troubleshooting', label: 'トラブルシューティング'},
       ],
     },
   ],
