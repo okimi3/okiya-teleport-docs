@@ -44,7 +44,7 @@ const config = {
     },
     navbar: {
       title: 'OKIYA式 Teleport V2',
-      logo: {alt: 'OKIYA式 Teleport V2', src: 'img/logo.svg'},
+      logo: {alt: 'OKIYA', src: 'img/okiya-logo.png', width: 32, height: 32},
       items: [
         {to: '/docs/quick-start', label: 'クイックスタート', position: 'left'},
         {
