@@ -30,6 +30,7 @@ const sidebars = {
         {type: 'doc', id: 'fade', label: 'Fade'},
         {type: 'doc', id: 'full-message', label: '満員時メッセージ'},
         {type: 'doc', id: 'arrival-notification', label: '到着通知'},
+        {type: 'doc', id: 'image-assets', label: '画像素材の使い方'},
       ],
     },
     {

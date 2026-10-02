@@ -51,8 +51,17 @@ DesktopとVRで同じデザインを使うことも、別々に調整するこ�
 
 画像を使わない場合は、背景色だけでFadeできます。<br />
 画像を使う場合は **画像を使用** をONにして、Projectビューにある画像を **Fade画像** 欄へ指定してね。<br />
-この欄はSpriteを使用するので、PNGを指定できない場合は画像のImport Settingsで **Texture Type → Sprite (2D and UI)** を確認します。<br />
-自分で用意したPNGを使う場合は、[自分のFade画像を使う方法](#fade-png-help)を確認してね。
+自分で用意したPNGを使う場合は、[画像素材の使い方：PNGをUnityへ取り込む](./image-assets#png-import)を確認してね。
+
+:::tip 画像サイズの目安
+- Desktop：**1024 × 576 px（16:9）**
+- VR：**1024 × 1024 px（1:1）**
+
+サイズや比率は固定ではありません。<br />
+Desktopは16:9、VRは1:1のプレビューを基準にすると作りやすいです。<br />
+**Fit／Fill／中心** や **画像倍率** で調整できます。<br />
+VRの1:1はデザイン確認用の目安なので、最終的な見え方は実機で確認してね。
+:::
 
 :::note スクリーンショット内のFade画像について
 このページのスクリーンショットに写っているカラフルな文字ロゴは、設定例として使用しているサンプル画像です。<br />
@@ -186,29 +195,6 @@ UnityでPlayを開始し、Fadeを設定した接続を使ってみてね。
 :::caution 快適な演出にするために
 極端に長い暗転や激しい明滅、短時間に強いFadeを何度も繰り返す演出は避けてね。
 :::
-
-## 補足・ヘルプ：自分のFade画像を使いたい場合 {#fade-png-help}
-
-ここからは、自分で用意したPNGをFade画像に使いたい人向けの補足です。
-
-1. 使用したいPNGをUnityのProjectビューへドラッグする
-2. ProjectビューでPNGを選択する
-3. Inspectorの **Texture Type** を **Sprite (2D and UI)** に変更する
-
-   ![Texture TypeのプルダウンでSprite (2D and UI)を選ぶUnity Inspectorの例](/img/screenshots/common/texture-type-sprite.png)
-
-4. **Apply** を押す
-5. Fade設定の **画像を使用** をONにし、**Fade画像** 欄へ指定する
-6. Desktop／VRの **フェードプレビュー** で確認する
-
-通常のFade画像として使うだけなら、ここまででOKです。<br />
-VRを個別設定している場合は、VR側のFade画像も設定してね。
-
-Fade画像のサイズや比率に決まりはありません。<br />
-Desktopは **16:9**、VRは **1:1（目安）** のプレビューを見ながら、**Fit／Fill／中心** や **画像倍率** で調整してください。<br />
-VRの最終的な見え方は、実機で確認してね。
-
-**✓ Fade画像を指定し、プレビューに表示されればOKです。**
 
 ## 次に読む
 
