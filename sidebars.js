@@ -38,6 +38,7 @@ const sidebars = {
       label: 'その他',
       collapsed: true,
       items: [
+        {type: 'doc', id: 'advanced-settings', label: '詳細設定'},
         {type: 'doc', id: 'update', label: 'アップデート'},
         {type: 'doc', id: 'faq', label: 'FAQ'},
         {type: 'doc', id: 'troubleshooting', label: 'トラブルシューティング'},
