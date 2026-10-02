@@ -19,12 +19,12 @@ const support = [
 
 export default function Home() {
   return (
-    <Layout title="説明書トップ" description="OKIYA式 テレポートギミック Ver.2の説明書。導入・基本設定からランダム、分散、Fade、到着通知まで。">
+    <Layout title="説明書トップ" description="OKIYA式 多機能テレポートシステム V2の説明書。導入・基本設定からランダム、分散、Fade、到着通知まで。">
       <main className="home-main container">
         <section className="home-hero" aria-labelledby="home-title">
           <span className="doc-kicker">VRChat / USER GUIDE</span>
-          <h1 id="home-title" className="home-title">OKIYA式<br />テレポートギミック <span className="home-version">Ver.2</span></h1>
-          <p className="home-description">VRChatワールドで使える、設定しやすさを重視したテレポートギミック。<br />
+          <h1 id="home-title" className="home-title">OKIYA式<br />多機能テレポートシステム <span className="home-version">V2</span></h1>
+          <p className="home-description">VRChatワールドで使える、設定しやすさを重視した多機能テレポートシステム。<br />
             基本のテレポートから、ランダム・分散・Fade・到着通知まで、Inspectorからまとめて設定できます。</p>
           <div className="home-actions">
             <Link className="button button--primary button--lg home-start-button" to="/docs/quick-start">クイックスタート →</Link>

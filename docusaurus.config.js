@@ -6,8 +6,8 @@ const organizationName = 'okimi3';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'OKIYA式 テレポートギミック Ver.2',
-  tagline: 'Unityで迷わず組み込める、テレポートギミックの公式ガイド',
+  title: 'OKIYA式 多機能テレポートシステム V2',
+  tagline: 'Unityで迷わず組み込める、多機能テレポートシステムの公式ガイド',
   favicon: 'img/favicon.svg',
   url: 'https://okimi3.github.io',
   baseUrl:
